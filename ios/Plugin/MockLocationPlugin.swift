@@ -9,10 +9,10 @@ import Capacitor
 public class MockLocationPlugin: CAPPlugin {
     private let implementation = MockLocation()
 
-    @objc func echo(_ call: CAPPluginCall) {
-        let value = call.getString("value") ?? ""
+    @objc func check(_ call: CAPPluginCall) {
+//        let value = call.getArray("whiteList") ?? []
         call.resolve([
-            "value": implementation.echo(value)
+            "mockDetected": false
         ])
     }
 }
