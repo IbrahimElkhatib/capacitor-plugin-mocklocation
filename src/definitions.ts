@@ -1,3 +1,3 @@
 export interface MockLocationPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  check(options?: { whiteList: string[] }): Promise<{ mockDetected: boolean, mocks?: { name: string, package: string }[] }>;
 }

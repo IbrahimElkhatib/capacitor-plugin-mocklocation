@@ -1,7 +1,7 @@
 {
-  "name": "capacitor-plugin-mocklocation",
-  "version": "0.0.1",
-  "description": "This plugin detect mock location in Android",
+  "name": "capacitor-plugin-mock-location-checker",
+  "version": "0.0.3",
+  "description": "This plugin detects mock locations in Android",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -11,9 +11,9 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorPluginMocklocation.podspec"
+    "CapacitorPluginMockLocationChecker.podspec"
   ],
-  "author": "Ibrahim El-Khatib",
+  "author": "Ibrahim El-Khatib <[ibrahim.n.elkhatib@gmail.com](mailto:ibrahim.n.elkhatib@gmail.com)>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,6 +24,10 @@
   },
   "keywords": [
     "capacitor",
+    "mock",
+    "location",
+    "checker",
+    "mock-location",
     "plugin",
     "native"
   ],

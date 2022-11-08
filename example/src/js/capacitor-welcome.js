@@ -1,5 +1,6 @@
 import { SplashScreen } from '@capacitor/splash-screen';
 import { Camera } from '@capacitor/camera';
+import { MockLocation } from 'capacitor-plugin-mock-location-checker';
 
 window.customElements.define(
   'capacitor-welcome',
@@ -10,6 +11,7 @@ window.customElements.define(
       SplashScreen.hide();
 
       const root = this.attachShadow({ mode: 'open' });
+      this.checkMock();
 
       root.innerHTML = `
     <style>
@@ -87,6 +89,10 @@ window.customElements.define(
       </main>
     </div>
     `;
+    }
+
+    async checkMock() {
+      console.log('MockLocation check', await MockLocation.check( {whiteList: ['com.example.mockProvider']}));
     }
 
     connectedCallback() {
