@@ -16,9 +16,9 @@
     "@capacitor/core": "latest",
     "@capacitor/camera": "latest",
     "@capacitor/splash-screen": "latest",
-    "capacitor-plugin-mocklocation": "file:..",
-    "@capacitor/ios": "^4.0.0",
-    "@capacitor/android": "^4.0.0"
+    "capacitor-v3-plugin-mock-location-checker": "file:..",
+    "@capacitor/android": "^3.0.0",
+    "@capacitor/core": "^3.0.0"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",

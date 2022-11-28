@@ -1,4 +1,4 @@
-# capacitor-plugin-mocklocation
+# capacitor-v3-plugin-mock-location-checker
 
 This plugin detects mock locations in Android
 
@@ -8,10 +8,15 @@ This plugin get mock location in Android api < 18 AND api >= 18
 
 - Android
 
+## Capacitor Support
+
+Works with [Capacitor v3](https://capacitor.ionicframework.com), Ionic's official native runtime.
+
+
 ## Install
 
 ```bash
-npm install capacitor-plugin-mocklocation
+npm install capacitor-v3-plugin-mock-location-checker
 npx cap sync
 ```
 
